@@ -4,9 +4,31 @@ The sorting done by IEx.Autocomplete does not actually do anything! At the end o
 (Disclaimer: unless I am missing something!)
 
 Also the elixir output for autocomplete has the same bug that mac operating systems have in that they do a lexographical sort. Atleast on a mac operating system!
-(This I am proving in this project!)
+(The perpose of this project is to prove the bug!)
+
+The bug is that when pattern matching to the same function with different airity, numbers past 10 but below 20 will show after arity of 1 and before arity of 2 but not at the end of the list like you would expect in a numerical sort. This is due to how lexographical sorts work, and from what I can gather in a quick research spike, is used by the operating system over a name + numerical for performance reasons. This same problem exists with folder names in the mac operating system. There is and LC_... config variable that might fix this issue for folders in certain operating systems. Still researching an LC_... fix.
+
+The bug is visible in the screenshot below where the function having the same name is out of order due to functions having an arity greater than 10.
+(Disclaimer, this be considered pointless because who writes functions with an arity greater than 10 ?)
+
+Mostly this is just for fun discussion!
 
 ## Installation
+Do standard install things like download erlang and elixir and mix as needed.
+
+To run the project use:
+`iex -S mix;`
+
+In the shell that opens type:
+1. "ElixirA"
+2. <tab>
+3. <tab>
+4. he
+5. <tab>
+
+Now you should see your module of the project and the functions for hello.
+Basically all the commands described and the output are shown in this screenshot:
+
 
 
 <!-- 
@@ -45,3 +67,5 @@ Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_do
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at <https://hexdocs.pm/elixir_autocomplete_bug_on_mac_computer>.
 
+## Acknowledgement:
+Shout out to github.com/murjax for finding the bug when I figured out how to get the autocomplete to sort by arity.

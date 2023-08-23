@@ -29,7 +29,7 @@ In the shell that opens type:
 Now you should see your module of the project and the functions for hello.
 Basically all the commands described and the output are shown in this screenshot:
 
-
+![example](/terminal_example.png)
 
 <!--
 

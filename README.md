@@ -73,4 +73,4 @@ and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at <https://hexdocs.pm/elixir_autocomplete_bug_on_mac_computer>.
 
 ## Acknowledgement:
-Shout out to github.com/murjax for finding the bug when I figured out how to get the autocomplete to sort by arity.
+Shout out to [github.com/murjax](https://github.com/murjax) for finding the bug when I figured out how to get the autocomplete to sort by arity.

@@ -1,14 +1,19 @@
 # ElixirAutocompleteBugOnMacComputer
 
-The sorting done by IEx.Autocomplete does not actually do anything! At the end of the day it either defers to either erlang's autocomplete, or the operating system itself.
+The sorting done by IEx.Autocomplete does not actually do anything!  
+At the end of the day it either defers to either erlang's autocomplete, or the operating system itself.  
 (Disclaimer: unless I am missing something!)
 
-Also the elixir output for autocomplete has the same bug that mac operating systems have in that they do a lexicographical sort. At least on a mac operating system!
+Also the elixir output for autocomplete has the same bug that mac operating systems have with file names in that they do a lexicographical sort. At least on a mac operating system!  
 (The purpose of this project is to prove the bug!)
 
-The bug is that when pattern matching to the same function with different arity, numbers past 10 but below 20 will show after arity of 1 and before arity of 2 but not at the end of the list like you would expect in a numerical sort. This is due to how lexicographical sorts work, and from what I can gather in a quick research spike, is used by the operating system over a name + numerical for performance reasons. This same problem exists with folder names in the mac operating system. There is and LC_... config variable that might fix this issue for folders in certain operating systems. Still researching an LC_... fix.
+The bug is that when pattern matching to the same function with different arity, numbers past 10 but below 20 will show after arity of 1 and before arity of 2 but not at the end of the list like you would expect in a numerical sort. 
 
-The bug is visible in the screenshot below where the function having the same name is out of order due to functions having an arity greater than 10.
+<!-- 
+This is due to how lexicographical sorts work, and from what I can gather in a quick research spike, is used by the operating system over a name + numerical for performance reasons. This same problem exists with folder names in the mac operating system. There is and LC_... config variable that might fix this issue for folders in certain operating systems. Still researching an LC_... fix.
+-->
+
+The bug is visible below in the Installation section screenshot. In the screenshot the function having the same name is out of order due to functions having an arity greater than 10.
 (Disclaimer, this be considered pointless because who writes functions with an arity greater than 10 ?)
 
 Mostly this is just for fun discussion!

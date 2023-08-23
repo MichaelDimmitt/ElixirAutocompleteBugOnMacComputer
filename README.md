@@ -1,6 +1,15 @@
 # ElixirAutocompleteBugOnMacComputer
 
-The sorting done by IEx does not actually 
+The sorting done by IEx.Autocomplete does not actually do anything! At the end of the day it either defers to either erlangs autocomplete, or the operating system itself.
+(Disclaimer: unless I am missing something!)
+
+Also the elixir output for autocomplete has the same bug that mac operating systems have in that they do a lexographical sort. Atleast on a mac operating system!
+(This I am proving in this project!)
+
+## Installation
+
+
+<!-- 
 
 ## Installation
 
@@ -29,6 +38,8 @@ def deps do
   ]
 end
 ```
+
+-->
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can

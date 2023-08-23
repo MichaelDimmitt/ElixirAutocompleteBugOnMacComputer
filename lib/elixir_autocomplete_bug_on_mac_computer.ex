@@ -12,7 +12,22 @@ defmodule ElixirAutocompleteBugOnMacComputer do
       :world
 
   """
-  def hello do
+  def hello() do
+    :world
+  end
+  def hello(_, _) do
+    :world
+  end
+  def hello(_, _, _, _, _, _, _, _, _, _, _, _, _, _) do
+    :world
+  end
+  def hello(_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _) do
+    :world
+  end
+  def hello(_, _, _, _) do
+    :world
+  end
+  def hello(_, _, _, _, _, _) do
     :world
   end
 end

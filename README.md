@@ -76,7 +76,7 @@ be found at <https://hexdocs.pm/elixir_autocomplete_bug_on_mac_computer>.
 Shout out to [github.com/murjax](https://github.com/murjax) for finding the bug when I figured out how to get the autocomplete to sort by arity.
 
 ## Additional Reading
-[the mac issue of folder names not sorting correctly](https://discussions.apple.com/thread/1317720)
-[regarding lexographic sort](https://softwareengineering.stackexchange.com/questions/127639/why-do-some-sorting-methods-sort-by-1-10-2-3)
-[preliminary research on changing LC_COLLATE, (very little time invested on this route so far.)](https://stackoverflow.com/questions/60296828/set-lc-collate-and-lc-ctype-on-macos)
-[looks like a promising LC_COLLATE example that I should try out.](https://apple.stackexchange.com/a/344960)
+[the mac issue of folder names not sorting correctly](https://discussions.apple.com/thread/1317720)  
+[regarding lexographic sort](https://softwareengineering.stackexchange.com/questions/127639/why-do-some-sorting-methods-sort-by-1-10-2-3)  
+[preliminary research on changing LC_COLLATE, (very little time invested on this route so far.)](https://stackoverflow.com/questions/60296828/set-lc-collate-and-lc-ctype-on-macos)  
+[looks like a promising LC_COLLATE example that I should try out.](https://apple.stackexchange.com/a/344960)  

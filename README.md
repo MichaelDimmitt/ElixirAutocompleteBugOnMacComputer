@@ -29,7 +29,7 @@ To run the project use:
 `iex -S mix;`
 
 In the shell that opens type:  
-`ElixirAutocompleteBugOnMacComputer.hello<tab>`
+`iex> ElixirAutocompleteBugOnMacComputer.hello<tab>`
 
 > If the above command did not make sense follow the instructions in one of the columns below:
 > | Autocomplete (with heavy use of tab)  | Autocomplete (with light use of tab) |

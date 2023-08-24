@@ -29,11 +29,13 @@ To run the project use:
 `iex -S mix;`
 
 In the shell that opens type:
-1. "ElixirA"
-2. `<tab>`
-3. `<tab>`
-4. he
-5. `<tab>`
+| Auto complete instructions  | Type out module and function instructions |
+| ------------- | ------------- |
+| 1. "ElixirA"  | 1. ElixirAutocompleteBugOnMacComputer.hello |
+| 2. `<tab>`  | `<tab>` <- (to trigger autocomplete) |
+| 3. `<tab>`  |  |
+| 4. he  |  |
+| 5. `<tab>`  |  |
 
 Now you should see your module of the project and the functions for hello.
 Basically all the commands described and the output are shown in this screenshot:

@@ -28,17 +28,17 @@ Do standard install things like download erlang and elixir and mix as needed.
 To run the project use:
 `iex -S mix;`
 
-In the shell that opens type 
+In the shell that opens type:  
 `ElixirAutocompleteBugOnMacComputer.hello<tab>`
 
-If the above command did not make sense follow the instructions in one of the columns below:
-| Autocomplete (with heavy use of tab)  | Autocomplete (with light use of tab) |
-| ------------- | ------------- |
-| 1. "ElixirA"  | 1. ElixirAutocompleteBugOnMacComputer.hello |
-| 2. `<tab>`  | `<tab>` <- (to trigger autocomplete) |
-| 3. `<tab>`  |  |
-| 4. he  |  |
-| 5. `<tab>`  |  |
+> If the above command did not make sense follow the instructions in one of the columns below:
+> | Autocomplete (with heavy use of tab)  | Autocomplete (with light use of tab) |
+> | ------------- | ------------- |
+> | 1. "ElixirA"  | 1. ElixirAutocompleteBugOnMacComputer.hello |
+> | 2. `<tab>`  | `<tab>` <- (to trigger autocomplete) |
+> | 3. `<tab>`  |  |
+> | 4. he  |  |
+> | 5. `<tab>`  |  |
 
 Now you should see your module of the project and the functions for hello.
 Basically all the commands described and the output are shown in this screenshot:
@@ -76,11 +76,11 @@ end
 ```
 
 -->
-
+<!--
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at <https://hexdocs.pm/elixir_autocomplete_bug_on_mac_computer>.
-
+-->
 ## Acknowledgement:
 Shout out to [github.com/murjax](https://github.com/murjax) for finding the bug when I figured out how to get the autocomplete to sort by arity.
 

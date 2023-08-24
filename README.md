@@ -1,5 +1,6 @@
 # ElixirAutocompleteBugOnMacComputer
-The bug is shown the screenshot below the arity numbers are out of order for the hello function:
+The bug is shown the screenshot below:  
+(notice that the arity numbers are out of order for the hello function)
   
 ![example](/terminal_example.png)
 <!--

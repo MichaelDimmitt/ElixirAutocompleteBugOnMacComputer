@@ -1,5 +1,9 @@
 # ElixirAutocompleteBugOnMacComputer
-
+The bug is shown the screenshot below:  
+(notice that the arity numbers are out of order for the hello function)
+  
+![example](/terminal_example.png)
+<!--
 The sorting done by IEx.Autocomplete does not actually do anything!
 At the end of the day it either defers to either erlang's autocomplete, or the operating system itself.
 (Disclaimer: unless I am missing something!)
@@ -8,14 +12,15 @@ Also the elixir output for autocomplete has the same bug that mac operating syst
 (The purpose of this project is to prove the bug!)
 
 The bug is that when pattern matching to the same function with different arity, numbers past 10 but below 20 will show after arity of 1 and before arity of 2 but not at the end of the list like you would expect in a numerical sort.
-
+--> 
 <!--
 This is due to how lexicographical sorts work, and from what I can gather in a quick research spike, is used by the operating system over a name + numerical for performance reasons. This same problem exists with folder names in the mac operating system. There is and LC_COLLATE config variable that might fix this issue for folders in certain operating systems. Still researching an LC_COLLATE fix.
 -->
-
+<!--
 The bug is visible below in the Installation section screenshot. In the screenshot the function having the same name is out of order due to functions having an arity greater than 10.
-(Disclaimer, this be considered pointless because who writes functions with an arity greater than 10 ?)
+-->
 
+(Disclaimer, this bug may be considered pointless because who writes functions with an arity greater than 10 ?)  
 Mostly this is just for fun discussion!
 
 ## Installation
@@ -24,12 +29,17 @@ Do standard install things like download erlang and elixir and mix as needed.
 To run the project use:
 `iex -S mix;`
 
-In the shell that opens type:
-1. "ElixirA"
-2. `<tab>`
-3. `<tab>`
-4. he
-5. `<tab>`
+In the shell that opens type:  
+`iex> ElixirAutocompleteBugOnMacComputer.hello<tab>`
+
+> If the above command did not make sense follow the instructions in one of the columns below:
+> | Autocomplete (with heavy use of tab)  | Autocomplete (with light use of tab) |
+> | ------------- | ------------- |
+> | 1. "ElixirA"  | 1. ElixirAutocompleteBugOnMacComputer.hello |
+> | 2. `<tab>`  | `<tab>` <- (to trigger autocomplete) |
+> | 3. `<tab>`  |  |
+> | 4. he  |  |
+> | 5. `<tab>`  |  |
 
 Now you should see your module of the project and the functions for hello.
 Basically all the commands described and the output are shown in this screenshot:
@@ -67,11 +77,11 @@ end
 ```
 
 -->
-
+<!--
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at <https://hexdocs.pm/elixir_autocomplete_bug_on_mac_computer>.
-
+-->
 ## Acknowledgement:
 Shout out to [github.com/murjax](https://github.com/murjax) for finding the bug when I figured out how to get the autocomplete to sort by arity.
 
@@ -80,3 +90,13 @@ Shout out to [github.com/murjax](https://github.com/murjax) for finding the bug 
 [regarding lexographic sort](https://softwareengineering.stackexchange.com/questions/127639/why-do-some-sorting-methods-sort-by-1-10-2-3)  
 [preliminary research on changing LC_COLLATE, (very little time invested on this route so far.)](https://stackoverflow.com/questions/60296828/set-lc-collate-and-lc-ctype-on-macos)  
 [looks like a promising LC_COLLATE example that I should try out.](https://apple.stackexchange.com/a/344960)  
+
+## Possible solutions:
+- change LC_COLLATE globally on the computer to sort differently by default.
+- add some plugin addition to erlang that elixir can use to intercept the output of erlang shell and modify it at runtime to sort correctly.
+- since I use bash, add a trap to key in on use of tab in the terminal and pipe the output to a sort.
+- confirm erlang is doing the sort instead of the operating system and make the change to erlang itself.
+
+## Get involved
+Do you know a solution that I have not mentioned here or do you want to leave a comment about this project?  
+Open a [github issue](https://github.com/MichaelDimmitt/ElixirAutocompleteBugOnMacComputer/issues) in the project to add to the discussion or make a pr proposing a change to the project. Thank you!

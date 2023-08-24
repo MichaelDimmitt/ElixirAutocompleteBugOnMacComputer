@@ -90,3 +90,9 @@ Shout out to [github.com/murjax](https://github.com/murjax) for finding the bug 
 [regarding lexographic sort](https://softwareengineering.stackexchange.com/questions/127639/why-do-some-sorting-methods-sort-by-1-10-2-3)  
 [preliminary research on changing LC_COLLATE, (very little time invested on this route so far.)](https://stackoverflow.com/questions/60296828/set-lc-collate-and-lc-ctype-on-macos)  
 [looks like a promising LC_COLLATE example that I should try out.](https://apple.stackexchange.com/a/344960)  
+
+## Possible solutions:
+
+## Get involved
+Do you know a solution that I have not mentioned here or do you want to leave a comment about this project? 
+Open a [github issue](https://github.com/MichaelDimmitt/ElixirAutocompleteBugOnMacComputer/issues) in the project to add to the discussion or make a pr proposing a change to the project. Thank you!

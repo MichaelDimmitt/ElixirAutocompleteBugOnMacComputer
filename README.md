@@ -28,8 +28,11 @@ Do standard install things like download erlang and elixir and mix as needed.
 To run the project use:
 `iex -S mix;`
 
-In the shell that opens type:
-| Auto complete instructions  | Type out module and function instructions |
+In the shell that opens type 
+`ElixirAutocompleteBugOnMacComputer.hello<tab>`
+
+If the above command did not make sense follow the instructions in one of the columns below:
+| Autocomplete (with heavy use of tab)  | Autocomplete (with light use of tab) |
 | ------------- | ------------- |
 | 1. "ElixirA"  | 1. ElixirAutocompleteBugOnMacComputer.hello |
 | 2. `<tab>`  | `<tab>` <- (to trigger autocomplete) |

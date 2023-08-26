@@ -97,6 +97,11 @@ Shout out to [github.com/murjax](https://github.com/murjax) for finding the bug 
 - since I use bash, add a trap to key in on use of tab in the terminal and pipe the output to a sort.
 - confirm erlang is doing the sort instead of the operating system and make the change to erlang itself.
 
+<!--
+notes on bash trap solution:
+`trap 'echo "Caught signal SIGIO"' DEBUG
+--> 
+
 ## Get involved
 Do you know a solution that I have not mentioned here or do you want to leave a comment about this project?  
 Open a [github issue](https://github.com/MichaelDimmitt/ElixirAutocompleteBugOnMacComputer/issues) in the project to add to the discussion or make a pr proposing a change to the project. Thank you!

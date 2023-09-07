@@ -32,15 +32,6 @@ To run the project use:
 In the shell that opens type:  
 `iex> ElixirAutocompleteBugOnMacComputer.hello<tab>`
 
-> If the above command did not make sense follow the instructions in one of the columns below:
-> | Autocomplete (with heavy use of tab)  | Autocomplete (with light use of tab) |
-> | ------------- | ------------- |
-> | 1. "ElixirA"  | 1. ElixirAutocompleteBugOnMacComputer.hello |
-> | 2. `<tab>`  | `<tab>` <- (to trigger autocomplete) |
-> | 3. `<tab>`  |  |
-> | 4. he  |  |
-> | 5. `<tab>`  |  |
-
 Now you should see your module of the project and the functions for hello.
 Basically all the commands described and the output are shown in this screenshot:
 

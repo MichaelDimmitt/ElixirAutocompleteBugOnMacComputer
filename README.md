@@ -30,8 +30,8 @@ To run the project use:
 In the shell that opens type:  
 `iex> ElixirAutocompleteBugOnMacComputer.hello<tab>`
 
-Now you should see your module of the project and the functions for hello.
-Basically all the commands described and the output are shown in this screenshot:
+Now you should see your module of the project and the functions for hello not showing in numerical order!  
+See the screenshot below:
 
 ![example](/terminal_example.png)
 

@@ -4,11 +4,13 @@ Elixirs iEX autocomplete output has a bug!
 The same bug that mac operating systems have with file names in that they do a lexicographical sort.  
 (The purpose of this project is to prove the bug!)
 
+<!--
 The sorting done by IEx.Autocomplete does not actually do anything!  
 At the end of the day it either defers to either erlang's autocomplete, or the operating system itself.  
 (Disclaimer: unless I am missing something!)
 
 The bug is visible when functions have the same name with different arity, numbers past 10 but below 20 will show after arity of 1 and before arity of 2 but not at the end of the list like you would expect in a numerical sort.
+-->
 
 <!--
 This is due to how lexicographical sorts work, and from what I can gather in a quick research spike, is used by the operating system over a name + numerical for performance reasons. This same problem exists with folder names in the mac operating system. There is and LC_COLLATE config variable that might fix this issue for folders in certain operating systems. Still researching an LC_COLLATE fix.

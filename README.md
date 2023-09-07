@@ -4,7 +4,7 @@ Elixirs iEX autocomplete output has a bug!
 The same bug that mac operating systems have with file names in that they do a lexicographical sort.  
 (The purpose of this project is to prove the bug!)
 
-The sorting done by IEx.Autocomplete does not actually do anything!
+The sorting done by IEx.Autocomplete does not actually do anything!  
 At the end of the day it either defers to either erlang's autocomplete, or the operating system itself.  
 (Disclaimer: unless I am missing something!)
 

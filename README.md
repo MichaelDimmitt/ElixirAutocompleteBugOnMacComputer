@@ -15,9 +15,10 @@ The bug is visible when functions have the same name with different arity, numbe
 <!--
 This is due to how lexicographical sorts work, and from what I can gather in a quick research spike, is used by the operating system over a name + numerical for performance reasons. This same problem exists with folder names in the mac operating system. There is and LC_COLLATE config variable that might fix this issue for folders in certain operating systems. Still researching an LC_COLLATE fix.
 -->
+<!--
 The bug is visible below in the Installation section screenshot. In the screenshot the function having the same name is out of order due to functions having an arity greater than 10.  
 (Disclaimer, this bug may be considered pointless because who writes functions with an arity greater than 10 ?)  
-
+-->
 Mostly this is just for fun discussion!
 
 ## Installation

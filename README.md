@@ -82,8 +82,6 @@ Shout out to [github.com/murjax](https://github.com/murjax) for finding the bug 
 
 ## Possible solutions:
 - change LC_COLLATE globally on the computer to sort differently by default.
-- add some plugin addition to erlang that elixir can use to intercept the output of erlang shell and modify it at runtime to sort correctly.
-- since I use bash, add a trap to key in on use of tab in the terminal and pipe the output to a sort.
 - confirm erlang is doing the sort instead of the operating system and make the change to erlang itself.
 
 ## Get involved
